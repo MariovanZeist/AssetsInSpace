@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "name": "assets.test",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:release",
+    "build:Release": "webpack --mode production",
+    "build:Debug": "webpack --mode development",
+    "publish": "npm run build:release && dotnet publish -c Release"
+  },
+  "devDependencies": {
+    "sass": "1.54.0",
+    "css-loader": "6.7.1",
+    "sass-loader": "13.0.2",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0"
+  }
+}
